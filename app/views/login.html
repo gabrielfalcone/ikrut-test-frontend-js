@@ -1,0 +1,22 @@
+<form name="loginForm" ng-submit="$ctrl.login()">
+  <div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Login</h3>
+  </div>
+  <div class="modal-body" id="modal-body">
+
+    <p class="form-group">
+      <label>User</label>
+      <input type="text" class="form-control" ng-model="user" />
+    </p>
+
+    <p class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" ng-model="password" />
+    </p>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="submit">Login</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+  </div>
+</form>
